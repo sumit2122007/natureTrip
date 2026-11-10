@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>travel website</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav class="navbar bg-dark">
+        <div class="container">
+                <h1 class="logo lg-heading text-light">WT</h1>
+                <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            <ul class="nav-items">
+                <li class="nav-item"><a href="./index.html">Home</a></li>
+                <li class="nav-item"><a href="./about.html">About</a></li>
+                <li class="nav-item"><a href="./contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <section class="about">
+        <div class="container">
+            <h2 class="lg-heading text-black about-heading">About Us</h2>
+            <p class="text-grey">Welcome to our website, your destination for stunning, high-quality images that inspire, captivate, and spark creativity. We curate a diverse collection of visuals—from serene landscapes and dramatic sunsets to adventure-filled scenes and everyday moments—designed to bring beauty and emotion to your projects, spaces, and ideas.</p>
+            
+        
+        <div class="about-wrapper text-grey">
+            <div class="left">
+                <ul>
+                    <li>High Quality.</li>
+                    <li>Easy search.</li>
+                    <li>Affordable.</li>
+                </ul>
+            </div>
+            <div class="right">
+                <ul>
+                    <li>Creative inspire.</li>
+                    <li>Fast support.</li>
+                    <li>Nature's images.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="count">
+            <div class="count-item count-item1">
+                <span>250</span>
+                <p>Travelled</p>
+            </div>
+            <div class="count-item count-item2">
+                <span>500</span>
+                <p>Places</p>
+            </div>
+            <div class="count-item count-item3">
+                <span>400</span>
+                <p>Guide</p>
+            </div>
+            <div class="count-item count-item4">
+                <span>20</span>
+                <p>Sport</p>
+            </div>
+        </div>
+
+
+        <div class="cta-banner">
+        <div class="cta-banner-left text-grey">
+            <p class="cta-line"> What are you waiting for, reach us right now.</p>
+        </div>
+        <div class="cta-banner-right">
+            <a href="contact.html" class="btn-cta">Contact Us</a>
+        </div>
+        </div>
+    </div>
+    </section>
+    <footer class="footer">
+        <div class="Social-media-links">
+        <i class="fab fa-whatsapp fa-4x"></i>
+        <i class="fab fa-facebook fa-4x"></i>
+        <i class="fab fa-twitter fa-4x"></i>
+        <i class="fab fa-instagram fa-4x"></i>
+        </div>
+        <p>world Travel &copy; 2029,all Rights Reserved</p>
+        <!-- <p><i>This Website is designed and developed by Sumit Kumar</i></p> -->
+
+    </footer>
+    <script>
+        (function(){
+            const hamburger = document.querySelector('.hamburger');
+            const navItems = document.querySelector('.nav-items');
+            if(!hamburger || !navItems) return;
+            hamburger.addEventListener('click', function(){
+                const isOpen = navItems.classList.toggle('open');
+                hamburger.classList.toggle('is-active');
+                hamburger.setAttribute('aria-expanded', isOpen);
+            });
+        })();
+    </script>
+</body>
+</html>
